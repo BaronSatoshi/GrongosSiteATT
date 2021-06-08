@@ -1,0 +1,22 @@
+/*Home*/
+#home{
+    height: 820px;
+}
+
+.headings{
+    font-size: 1.7rem;
+}
+
+/*Sobre Mim*/
+#pic img{
+    width: 300px;
+    height: 175px;
+}
+
+/*Portfolio*/
+.galeria img{
+    width: 250px;
+    height: 150px;
+    margin: 10px;
+}
+

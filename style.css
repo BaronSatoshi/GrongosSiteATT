@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+   font-family: Arial, Helvetica, sans-serif;
+}
+   
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:  10000;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 20px;
+}
+
+header ul li{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+header ul li a{
+    text-decoration: none;
+    padding: 8px 20px;
+    color: white;
+    transition: all .5s ease ;
+    border-radius: 20px;
+}
+
+header ul li a:hover,
+header ul li a.ativo{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+#home::before{
+    content: '';
+    top: 0;
+    right: 0;
+    background: url('imagens/nature-colorful-landscape-dusk-cloud.jpg') no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: .8;
+}
+
+#logo{
+    font-size: 2em;
+    font-weight: 700;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#f1b57f,transparent);
+    z-index: 1000;
+}
+
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.sobre{
+    position: relative;
+    padding: 100px;
+    background: #f1b57f;
+    text-align: justify;
+    
+}
+
+.sobre h2{
+    color: white;
+    font-size: 3.5em;
+    margin-bottom: 10px;
+}
+
+.sobre p{
+    color: white;
+    font-size: 24px;
+    text-indent: 20px;
+    
+}
+
+.combofofo{
+    position: relative;
+    padding: 100px;
+    background: #4b8cd0;
+    text-align: justify;
+}
+
+.combofofo h2{
+    color: white;
+    font-size: 3.5em;
+    margin-left: 10px;
+}
+
+.combofofo p{
+    color: white;
+    font-size: 24px;
+    text-indent: 20px;
+}
+
+.pcolor{
+    display: inline-flex; 
+    flex-direction: column;
+    border: 1px solid black;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.pcolor:hover,
+.pcolor#active{
+    background: red;
+    color: white;
+    border: none;
+    box-shadow:  0 0 20px rgb(255,45,4);
+}
+
+#th2{
+    background-color: #f1b57f;
+    color: white;
+    font-size: 3.5em;
+    margin-left: 0px;
+    text-align: center;
+}
+
+.conteudo{
+    display: table;
+    background-color: #f1b57f;
+}
+
+.galeria{
+    display: table-cell;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+    background: #f1b57f;
+    float: left;
+}
+
+.texto{
+display: table-cell;
+float: left;
+width: 930px;
+background: #f1b57f;
+font-size: 20px;
+}
+    
+    
+.galeria img{
+    width: 360px;
+    height: 240px;
+    margin: 10px
+    
+}
+
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.gotop{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: black;
+    font-size: 22px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-image: linear-gradient(to top, blueviolet) 50%, white 50%;
+    transition: all .10s;
+}
+
+.gotop:hover{
+    background-position: left bottom;
+    background: #4b8cd0;
+    color: white;
+}
+
+
+
